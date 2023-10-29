@@ -1,6 +1,7 @@
 import React from 'react';
 import {usePathname} from 'next/navigation'
-import TopNav from '../components/TopNav';
+import TopNav from './TopNav';
+import SecondNav from './SecondNav';
 
 
 export default function MainLayout({
@@ -12,6 +13,7 @@ export default function MainLayout({
   return (
     <>
     <TopNav />
+    <SecondNav />
     <div>
         {children}
     </div>
