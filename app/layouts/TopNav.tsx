@@ -14,7 +14,7 @@ export default function TopNav(){
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentMessageIndex((prevIndex) => (prevIndex + 1) % messages.length)
-        }, 8000);
+        }, 5000);
 
         return() => clearInterval(interval)
     }, []);
