@@ -27,7 +27,7 @@ export default function TopNav(){
       >
         <div className="flex font-mono text-[.75rem]">
           {messages[currentMessageIndex].text}
-          <a className='underline hover:text-pink-500 ml-2' href={messages[currentMessageIndex].link}>details</a>
+          <a className='underline hover:text-pink-500 ml-2' href={messages[currentMessageIndex].link} rel='noopener noreferrer' target="_blank">details</a>
         </div>
       </div>
     );
